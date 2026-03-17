@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+# 🌙 Yofukashi no Uta — Wiki
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Wiki non-officiel de l'anime **Call of the Night (夜ふかしの唄)**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📖 Synopsis
 
-## React Compiler
+*En une rencontre, la vie peut reprendre du mordant !*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+La nuit où Kô Yamori, collégien et éternel insomniaque, décide de sortir se promener seul, il fait la rencontre de Nazuna Nanakusa, une jolie vampire. Sa veillée seule avec elle va bouleverser le destin de Kô...
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎯 Description du projet
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Ce projet est un wiki interactif dédié à l'univers de *Yofukashi no Uta*. Il recense les personnages, vampires et informations clés de l'anime, dans une ambiance visuelle nuit étoilée fidèle à l'œuvre.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Projet réalisé dans le but d'apprendre **TypeScript** en conditions réelles, avec une architecture React moderne.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+🔗 [Voir le repo](https://github.com/alnrfLO/yofukashi-no-uta)
+
+---
+
+## 🛠️ Stack technique
+
+| Technologie | Usage |
+|---|---|
+| React | Interface utilisateur |
+| TypeScript | Typage statique |
+| Vite | Bundler / dev server |
+| React Router | Navigation entre les pages |
+| Canvas API | Animation étoiles en arrière-plan |
+
+---
+
+## 🚀 Installation
+
+```bash
+# Cloner le repo
+git clone https://github.com/alnrfLO/yofukashi-no-uta.git
+
+# Aller dans le dossier
+cd yofukashi-no-uta
+
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Ouvrir [http://localhost:5173](http://localhost:5173) dans le navigateur.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🗺️ Roadmap
+
+- [x] Setup React + TypeScript + Vite
+- [x] Interfaces TypeScript (Character, Vampire)
+- [x] Données JSON des personnages
+- [x] Animation étoiles (Canvas)
+- [x] Page Home
+- [ ] Page liste des personnages
+- [ ] Page détail d'un personnage
+- [ ] Barre de recherche / filtres
+- [ ] Déploiement sur Vercel + Render
+
+---
+
+## 👤 Auteur
+
+**alnrfLO** — [GitHub](https://github.com/alnrfLO)
