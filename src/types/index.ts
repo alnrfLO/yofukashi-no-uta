@@ -1,4 +1,5 @@
-interface Character {
+
+export interface Character {
   nom: string
   interetRomantique: string
   personnalite : string[] 
@@ -9,9 +10,15 @@ interface Character {
   age : number | string   
 }
 
-interface Vampire extends Character {
+export interface Vampire extends Character {
     pouvoir : string 
     objetSouvenir  : string 
     clan : string 
 }
 
+export interface Tome {
+    numero : number | string ,
+    image : string ,
+    titre : string ,
+    description : string 
+}
