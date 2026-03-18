@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react'
+const Tableau = ["pink","purple","white"]
 
 function StarBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -14,19 +15,19 @@ function StarBackground() {
     canvas.width = width;
     canvas.height = height;
 
-    const stars = Array.from({ length: 150 }, () => ({
+    const stars = Array.from({ length: 500 }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
-      r: Math.random() * 1.5,
-      dx: (Math.random() - 0.5) * 0.5,
-      dy: (Math.random() - 0.5) * 0.5
+      r: Math.random() * 2,
+      dx: (Math.random() - 0.5) * 0.2,
+      dy: (Math.random() - 0.5) * 0.2,
+      color: Tableau[Math.floor(Math.random() * Tableau.length)]
     }));
-
     function animateStars() {
       ctx!.clearRect(0, 0, width, height);
-      ctx!.fillStyle = "#0ff";
       ctx!.globalAlpha = 0.8 + 0.2 * Math.sin(Date.now() / 300);
       stars.forEach(s => {
+        ctx!.fillStyle = s.color ;
         ctx!.beginPath();
         ctx!.arc(s.x, s.y, s.r, 0, Math.PI * 2);
         ctx!.fill();

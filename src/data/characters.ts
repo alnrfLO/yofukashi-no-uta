@@ -1,4 +1,4 @@
-import { Character , Vampire } from '../types/index'
+import type { Character , Vampire } from '../types/index'
 export const characters: Character[] = [
     {
         nom: 'Kou Yamori',
