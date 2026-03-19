@@ -16,7 +16,7 @@ export default function Home() {
         </div>
       </div>
       <div className="covers">
-        {tomes.map((tome) => (
+        {tomes.filter(t => t.numero !== 1).map((tome) => (
           <img key={tome.numero} src={tome.image} alt={tome.titre} />
         ))}
       </div>

@@ -38,7 +38,7 @@ export const tomes : Tome [] = [
     },
         {
         numero :7,
-        image : "https://www.nautiljon.com/images/manga_volumes/11/61/mini/call_of_the_night_7949816.webp?11758450386",
+        image : "https://www.nautiljon.com/images/manga_volumes/11/61/call_of_the_night_7949816.webp?1758450386",
         titre : "Tome 7",
         description : "En une rencontre, la vie peut reprendre du mordant ! Bois mon sang, je vais tout te raconter. Nazuna et Kô ont approché Kabura Honda dans l'espoir d'obtenir des révélations sur l'époque où Nazuna était humaine. En guise de réponse, Kabura offre à la vampire un échantillon de son propre sang humain, prélevé avant sa transformation, et commence à leur dévoiler son passé. Les souvenirs et les émotions de Kabura se diffusent à travers son sang... Enchantée, Kabura. Qui est cette femme qui sourit dans les souvenirs de Kabura ? Le secret de Nazuna, dissimulé dans l'hôpital de nuit, enfin révélé !"
     },
@@ -72,5 +72,52 @@ export const tomes : Tome [] = [
         titre : "Tome 12",
         description : "Ami ou ennemi ? Un nouveau vampire attaque ! Dans l'espoir d'une réconciliation, Kô et sa bande poursuivent leur enquête sur Kiku et Mahiru. Quelle vérité troublante la détective découvrira-t-elle en pénétrant le domicile de Mahiru ? Je ferai ce qu'il faudra pour lui reprendre Mahiru. Avant qu'ils aient pu tenter quoi que ce soit, un homme mystérieux apparaît devant eux ! Qui est-il et pourquoi attaque-t-il Nazuna et Kô ?!"
     },
-
+        {
+        numero: 13,
+        image: "https://www.nautiljon.com/images/manga_volumes/12/00/mini/call_of_the_night_13974200.webp?11758432639",
+        titre: "Tome 13",
+        description: "Kô retourne à l'école ? L'aventure change de décor ! Le matin où Kiku lui a filé entre les doigts, Kô se retrouve nez à nez avec sa mère. Que va-t-il faire, maintenant que sa vie nocturne est découverte ? Qu'est-ce que tu fabriques au lieu d'aller à l'école ? De son côté, Mahiru a quitté la ville avec Kiku. Kô sera-t-il capable de deviner leur destination ?"
+    },
+        {   
+        numero: 14,
+        image: "https://www.nautiljon.com/images/manga_volumes/12/07/mini/call_of_the_night_14979170.webp?11753955711",
+        titre: "Tome 14",
+        description: "Les nuits de l'excursion scolaire vont être mouvementées ! Pour leur voyage scolaire, Mahiru et Kiku ont choisi de se rendre à Hokkaidô. À peine arrivé là-bas, Kô, qui s'est lancé sur leurs traces, fait la connaissance d'un vampire en uniforme scolaire. Et il semblerait que ce garçon ne soit pas un étranger pour Nazuna !"
+    },
+        {
+        numero: 15,
+        image: "https://www.nautiljon.com/images/manga_volumes/12/15/mini/call_of_the_night_15982351.webp?11761913057",
+        titre: "Tome 15",
+        description: "L'heure du face-à-face fatidique avec Kiku Hoshimi est enfin arrivée ! Le voyage de Kiku et Mahiru approche de sa conclusion. Kô et sa bande, qui ont deviné leur destination finale, se lancent à leur poursuite, mais la situation prend une tournure imprévue. On se rencontre enfin... Kiku Hoshimi. Kô veut se réconcilier avec Mahiru, Anko a des comptes à régler avec Kiku... La nuit promet d'être longue !"
+    },
+        {
+        numero: 16,
+        image: "https://www.nautiljon.com/images/manga_volumes/12/77/mini/call_of_the_night_16987877.webp?11769779841",
+        titre: "Tome 16",
+        description: "N/C"
+    },
+        {
+        numero: 17,
+        image: "https://www.nautiljon.com/images/manga_volumes/12/60/mini/call_of_the_night_17989106.webp?11770265708",
+        titre: "Tome 17",
+        description: "N/C"
+    },
+        {
+        numero: 18,
+        image: "https://www.nautiljon.com/images/manga_volumes/12/54/mini/call_of_the_night_18993345.webp?10",
+        titre: "Tome 18",
+        description: "N/C"
+    },
+        {
+        numero: 19,
+        image: "https://www.nautiljon.com/images/manga_volumes/12/61/mini/call_of_the_night_19997016.webp?10",
+        titre: "Tome 19",
+        description: "N/C"
+    },
+        {
+        numero: 20,
+        image: "https://www.nautiljon.com/images/manga_volumes/12/10/mini/call_of_the_night_20998201.webp?11709420340",
+        titre: "Tome 20",
+        description: "N/C"
+    },
 ]
