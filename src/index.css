@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(180deg , #736de6, #6445bd, #2e549f,#21186b,#160f53);;
+    background: linear-gradient(180deg , #736de6, #6445bd, #2e549f,#21186b,#160f53);
+    background-attachment: fixed;
     margin : 0;
 }
 
