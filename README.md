@@ -71,3 +71,41 @@ Ouvrir [http://localhost:5173](http://localhost:5173) dans le navigateur.
 ## 👤 Auteur
 
 **alnrfLO** — [GitHub](https://github.com/alnrfLO)
+
+```
+wiki Yofukashi no Uta
+├─ eslint.config.js
+├─ index.html
+├─ package-lock.json
+├─ package.json
+├─ public
+│  ├─ favicon.svg
+│  └─ icons.svg
+├─ README.md
+├─ src
+│  ├─ App.css
+│  ├─ App.tsx
+│  ├─ components
+│  │  ├─ CharacterCard.tsx
+│  │  ├─ Navbar.css
+│  │  ├─ Navbar.tsx
+│  │  └─ StarBackground.tsx
+│  ├─ data
+│  │  ├─ characters.ts
+│  │  └─ tomes.ts
+│  ├─ index.css
+│  ├─ main.tsx
+│  ├─ pages
+│  │  ├─ CharacterDetail.tsx
+│  │  ├─ Characters.css
+│  │  ├─ Characters.tsx
+│  │  ├─ Home.css
+│  │  └─ Home.tsx
+│  └─ types
+│     └─ index.ts
+├─ tsconfig.app.json
+├─ tsconfig.json
+├─ tsconfig.node.json
+└─ vite.config.ts
+
+```
