@@ -34,8 +34,9 @@
 }
 
 .cadre.actif {
-    flex: 2;
+    flex: 3;
     filter: brightness(1);
+    outline: 3px solid rgba(150, 100, 255, 0.8);
 }
 
 .info-section {
