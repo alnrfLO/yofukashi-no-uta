@@ -8,7 +8,7 @@
 
 *En une rencontre, la vie peut reprendre du mordant !*
 
-La nuit où Kô Yamori, collégien et éternel insomniaque, décide de sortir se promener seul, il fait la rencontre de Nazuna Nanakusa, une jolie vampire. Sa veillée seule avec elle va bouleverser le destin de Kô...
+La nuit où Kou Yamori, collégien et éternel insomniaque, décide de sortir se promener seul, il fait la rencontre de Nazuna Nanakusa, une jolie vampire. Sa veillée seule avec elle va bouleverser le destin de Kô...
 
 ---
 
