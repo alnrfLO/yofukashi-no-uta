@@ -1,0 +1,132 @@
+.musiques-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.musique-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 26px 28px;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.musique-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-border);
+    box-shadow: var(--shadow-card);
+}
+
+.musique-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.musique-type {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.musique-type.opening {
+    background: rgba(178, 141, 255, 0.2);
+    color: var(--accent);
+    border: 1px solid var(--accent-border);
+}
+
+.musique-type.ending {
+    background: rgba(255, 111, 156, 0.18);
+    color: var(--rose);
+    border: 1px solid rgba(255, 111, 156, 0.4);
+}
+
+.musique-saison {
+    font-size: 0.75rem;
+    color: var(--ink-faint);
+    font-weight: 600;
+}
+
+.musique-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.musique-interprete {
+    font-size: 0.88rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.musique-card p {
+    font-size: 0.88rem;
+}
+
+.musique-meaning {
+    margin-top: 10px;
+    font-style: italic;
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+}
+
+.musique-play {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 9px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--accent-border);
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.musique-play:hover {
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    color: var(--bg-0);
+    transform: translateY(-2px);
+}
+
+.musique-player {
+    position: relative;
+    margin-top: 16px;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-card);
+}
+
+.musique-player iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.musique-episodes {
+    margin-top: 14px;
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 12px;
+}

@@ -1,0 +1,126 @@
+import type { Arc } from '../types/index'
+
+export const arcs: Arc[] = [
+    {
+        id: 'rencontre-nocturne',
+        titre: 'Rencontre nocturne',
+        tomes: 'Tomes 1-2',
+        tomeNumeros: [1, 2],
+        resume: "Kô Yamori, collégien insomniaque, fuit une vie diurne sans saveur en errant seul la nuit. Il croise la route de Nazuna Nanakusa, une vampire qui lui fait découvrir la vie nocturne. Fasciné, il décide de vouloir devenir vampire lui-même.",
+        evenementsClefs: [
+            "Kô rencontre Nazuna pour la première fois",
+            "Nazuna explique qu'il faut tomber mutuellement amoureux pour qu'elle le transforme",
+            "Akira Asai tente de ramener Kô à l'école puis finit par le suivre dans ses virées nocturnes",
+        ],
+    },
+    {
+        id: 'nouveaux-vampires',
+        titre: 'Nouveaux vampires',
+        tomes: 'Tomes 3-4',
+        tomeNumeros: [3, 4],
+        resume: "Le cercle de connaissances vampiriques de Kô s'élargit. Il découvre que Nazuna n'est pas la seule vampire de la ville et rencontre Midori Kohakobe et Hatsuka Suzushiro, chacune avec ses propres habitudes de nuit.",
+        evenementsClefs: [
+            "Une vampire mystérieuse se mêle à une soirée de Kô et Nazuna",
+            "Découverte du maid café tenu par Midori Kohakobe",
+            "Premier incident impliquant plusieurs vampires en même temps",
+        ],
+    },
+    {
+        id: 'ombre-de-la-detective',
+        titre: "L'ombre de la détective",
+        tomes: 'Tomes 5-6',
+        tomeNumeros: [5, 6],
+        resume: "Kô croise la route d'Anko Uguisu, détective privée traquant les vampires. Ébranlé par cette rencontre et par la franchise de Nazuna sur ses sentiments, il doit clarifier ce qu'il veut vraiment. Nazuna, de son côté, entreprend consciemment de le faire tomber amoureux d'elle.",
+        evenementsClefs: [
+            "Première rencontre entre Kô et Anko Uguisu",
+            "Nazuna se confie sur ses véritables intentions",
+            "Kô et Nazuna arpentent Tôkyô de nuit pour comprendre ce qu'est vraiment l'amour",
+        ],
+    },
+    {
+        id: 'le-sang-de-kabura',
+        titre: 'Le sang de Kabura',
+        tomes: 'Tomes 7-9',
+        tomeNumeros: [7, 8, 9],
+        resume: "Nazuna et Kô se tournent vers Kabura Honda, une très ancienne vampire, pour percer le mystère du passé humain de Nazuna. Par le sang, Kabura leur transmet ses souvenirs et révèle le rôle de Haru Nanakusa, la mère de Nazuna. Le passé de Nazuna avec sa première amie humaine, Kyôko Mejiro, est également dévoilé.",
+        evenementsClefs: [
+            "Kabura Honda partage ses souvenirs humains par le sang",
+            "Révélation du lien entre Haru Nanakusa et la transformation de Kabura",
+            "Flashback sur l'amitié entre Nazuna et Kyôko Mejiro, qui se termine tragiquement",
+            "Nuit d'Halloween : la détective attaque plusieurs vampires",
+        ],
+    },
+    {
+        id: 'vampires-vs-detective',
+        titre: 'Vampires VS Détective',
+        tomes: 'Tome 10',
+        tomeNumeros: [10],
+        resume: "Le conflit entre Anko Uguisu et les vampires éclate ouvertement. Nazuna, prête à tout pour protéger Kô et ses proches, doit affronter son ancienne amie. Le vœu secret et la véritable identité d'Anko sont révélés : elle n'est autre que Kyôko Mejiro.",
+        evenementsClefs: [
+            "Combat ouvert entre Anko et les vampires",
+            "Révélation : Anko Uguisu est Kyôko Mejiro, la première amie de Nazuna",
+            "Le vœu secret d'Anko est mis au jour",
+        ],
+    },
+    {
+        id: 'kiku-hoshimi',
+        titre: 'Kiku Hoshimi',
+        tomes: 'Tomes 11-12',
+        tomeNumeros: [11, 12],
+        resume: "La vampire responsable du drame de la famille d'Anko est identifiée : Kiku Hoshimi, une créatrice d'acolytes vieille de plusieurs siècles, également liée à Mahiru Seki. Un mystérieux vampire attaque Kô et Nazuna alors qu'ils enquêtent sur elle.",
+        evenementsClefs: [
+            "Kô retrouve Mahiru, amoureux transi de Kiku Hoshimi",
+            "Découverte du véritable passé de Kiku Hoshimi",
+            "Un vampire inconnu s'en prend à Kô et Nazuna",
+        ],
+    },
+    {
+        id: 'retour-a-lecole',
+        titre: "Retour à l'école et excursion à Hokkaidô",
+        tomes: 'Tomes 13-15',
+        tomeNumeros: [13, 14, 15],
+        resume: "La double vie nocturne de Kô est découverte par sa mère, le forçant à un retour temporaire à l'école. Pendant ce temps, Mahiru fugue avec Kiku Hoshimi jusqu'à Hokkaidô, où Kô et sa bande les rattrapent pour un face-à-face décisif avec Kiku.",
+        evenementsClefs: [
+            "La mère de Kô découvre ses sorties nocturnes",
+            "Mahiru quitte la ville avec Kiku Hoshimi",
+            "Voyage scolaire à Hokkaidô et rencontre avec un vampire lié au passé de Nazuna",
+            "Confrontation finale du groupe avec Kiku Hoshimi",
+        ],
+    },
+    {
+        id: 'vers-la-nuit-finale',
+        titre: 'Vers la nuit finale',
+        tomes: 'Tomes 16-18',
+        tomeNumeros: [16, 17, 18],
+        resume: "Les répercussions de la confrontation avec Kiku Hoshimi se font sentir. Le pouvoir de semi-vampire de Kô devient de plus en plus difficile à maîtriser, tandis que les derniers secrets du passé de Nazuna refont surface. Chaque personnage se rapproche du moment où il devra faire un choix définitif.",
+        evenementsClefs: [
+            "Kô peine à contrôler son état de semi-vampire",
+            "Derniers pans du passé de Nazuna dévoilés",
+            "Les enjeux personnels de chaque personnage se précisent avant le dénouement",
+        ],
+    },
+    {
+        id: 'la-nuit-finale',
+        titre: 'La nuit finale',
+        tomes: 'Tomes 19-20',
+        tomeNumeros: [19, 20],
+        resume: "Kô et Nazuna affrontent enfin la question qui les hante depuis leur rencontre : que signifie s'aimer, pour un humain et une vampire que le temps ne traite pas de la même façon ? Ils finissent par s'avouer leurs sentiments avant de se séparer pour un temps. Dans l'épilogue, Kô retrouve Nazuna dans un village au-delà du cercle arctique.",
+        evenementsClefs: [
+            "Kô et Nazuna s'avouent enfin leurs sentiments l'un pour l'autre",
+            "Séparation temporaire du duo",
+            "Épilogue : retrouvailles de Kô et Nazuna dans un village arctique",
+            "Promesse de continuer, à leur manière, cette relation hors du temps",
+        ],
+    },
+    {
+        id: 'paradise-arc',
+        titre: 'Paradise Arc (suite, 2025)',
+        tomes: 'Chapitres additionnels (hors tomes 1-20)',
+        tomeNumeros: [],
+        resume: "Courte suite en huit chapitres, prépubliée dans Weekly Shônen Sunday entre juillet et août 2025. Elle se déroule durant l'ellipse temporelle entre les deux derniers chapitres du récit principal et suit Kô et la détective Anko Uguisu enquêtant sur un possible culte d'inspiration vampirique.",
+        evenementsClefs: [
+            "Enquête conjointe de Kô et Anko Uguisu sur un culte suspect",
+            "Éclairage supplémentaire sur la période qui précède l'épilogue du tome 20",
+        ],
+    },
+]

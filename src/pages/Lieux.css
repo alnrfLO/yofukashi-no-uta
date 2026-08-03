@@ -1,0 +1,114 @@
+.lieu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 26px;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.lieu-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.lieu-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-border);
+    box-shadow: var(--shadow-card);
+}
+
+.lieu-media-link {
+    display: block;
+}
+
+.lieu-media {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.lieu-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.lieu-card:hover .lieu-media img {
+    transform: scale(1.05);
+}
+
+.lieu-media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 45%, rgba(6, 4, 15, 0.92) 100%);
+}
+
+.lieu-media h2 {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 16px;
+    font-size: 1.3rem;
+    color: white;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.lieu-body {
+    padding: 20px 24px 26px;
+}
+
+.lieu-body p {
+    font-size: 0.88rem;
+}
+
+.membres-list {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.membre-tag {
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-border);
+    color: var(--ink);
+    padding: 5px 13px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+a.membre-tag {
+    cursor: pointer;
+}
+
+a.membre-tag:hover {
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    color: var(--bg-0);
+    transform: translateY(-2px);
+}
+
+.lieu-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 16px;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.lieu-more:hover {
+    color: var(--ink);
+}

@@ -1,0 +1,82 @@
+.person-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.person-card-media {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: var(--shadow-card);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.person-card:hover .person-card-media {
+    transform: translateY(-6px);
+    border-color: var(--accent-border);
+    box-shadow: 0 14px 32px rgba(155, 107, 255, 0.28);
+}
+
+.person-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+    display: block;
+}
+
+.type-pill {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    backdrop-filter: blur(6px);
+}
+
+.type-pill.humain {
+    background: rgba(178, 141, 255, 0.22);
+    color: #e4d9ff;
+    border: 1px solid rgba(178, 141, 255, 0.4);
+}
+
+.type-pill.vampire {
+    background: rgba(255, 111, 156, 0.2);
+    color: #ffd3e0;
+    border: 1px solid rgba(255, 111, 156, 0.4);
+}
+
+.unverified-pill {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(242, 200, 121, 0.25);
+    border: 1px solid rgba(242, 200, 121, 0.5);
+    color: var(--gold);
+    font-size: 0.75rem;
+    font-weight: 800;
+    backdrop-filter: blur(6px);
+}
+
+.person-card h3 {
+    font-size: 1.05rem;
+    text-align: center;
+    color: var(--ink);
+}

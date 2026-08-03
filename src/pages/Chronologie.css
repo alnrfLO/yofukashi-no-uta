@@ -1,0 +1,117 @@
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 32px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--accent-border), transparent);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.timeline-index {
+    position: absolute;
+    left: -32px;
+    top: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--bg-0);
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 12px rgba(178, 141, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.68rem;
+    font-weight: 800;
+    color: var(--accent);
+    transform: translateX(-11px);
+}
+
+.timeline-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 22px 26px;
+    transition: border-color 0.2s ease;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.timeline-card:hover {
+    border-color: var(--accent-border);
+}
+
+.timeline-main {
+    flex: 1;
+    min-width: 240px;
+}
+
+.timeline-card h2 {
+    margin: 0 0 4px 0;
+    font-size: 1.35rem;
+}
+
+.timeline-card .tomes-range {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.timeline-card p {
+    font-size: 0.9rem;
+}
+
+.timeline-card ul {
+    margin: 12px 0 0 0;
+    padding-left: 18px;
+}
+
+.timeline-card li {
+    margin-bottom: 5px;
+    font-size: 0.85rem;
+    color: var(--ink-dim);
+}
+
+.timeline-covers {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 8px;
+    max-width: 168px;
+}
+
+.timeline-covers img {
+    width: 44px;
+    height: 66px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(4, 2, 20, 0.5);
+    transition: transform 0.2s ease;
+}
+
+.timeline-covers img:hover {
+    transform: translateY(-3px) scale(1.06);
+}
+
+@media (max-width: 640px) {
+    .timeline-covers {
+        max-width: 100%;
+    }
+}

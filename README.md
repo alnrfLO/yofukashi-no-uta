@@ -1,6 +1,6 @@
 # 🌙 Yofukashi no Uta — Wiki
 
-> Wiki non-officiel de l'anime **Call of the Night (夜ふかしの唄)**
+> Wiki non-officiel du manga/anime **Call of the Night (夜ふかしの唄)**
 
 ---
 
@@ -8,13 +8,20 @@
 
 *En une rencontre, la vie peut reprendre du mordant !*
 
-La nuit où Kou Yamori, collégien et éternel insomniaque, décide de sortir se promener seul, il fait la rencontre de Nazuna Nanakusa, une jolie vampire. Sa veillée seule avec elle va bouleverser le destin de Kô...
+La nuit où Kô Yamori, collégien et éternel insomniaque, décide de sortir se promener seul, il fait la rencontre de Nazuna Nanakusa, une jolie vampire. Sa veillée seule avec elle va bouleverser le destin de Kô...
 
 ---
 
 ## 🎯 Description du projet
 
-Ce projet est un wiki interactif dédié à l'univers de *Yofukashi no Uta*. Il recense les personnages, vampires et informations clés de l'anime, dans une ambiance visuelle nuit étoilée fidèle à l'œuvre.
+Wiki interactif dédié à l'univers de *Yofukashi no Uta*, dans une ambiance visuelle nuit étoilée fidèle à l'œuvre : fond animé, effets de survol, transitions entre les pages.
+
+Le site couvre :
+- **Personnages** — humains et vampires, avec fiches détaillées (pouvoirs, lignées, relations)
+- **Tomes** — les 20 volumes du manga, regroupés par arc narratif
+- **Chronologie** — les grands arcs de l'histoire, du premier tome au Paradise Arc
+- **Lieux** — les décors clés de la série
+- **Musiques** — les openings/endings de l'anime, avec lecteur intégré
 
 Projet réalisé dans le but d'apprendre **TypeScript** en conditions réelles, avec une architecture React moderne.
 
@@ -57,14 +64,18 @@ Ouvrir [http://localhost:5173](http://localhost:5173) dans le navigateur.
 ## 🗺️ Roadmap
 
 - [x] Setup React + TypeScript + Vite
-- [x] Interfaces TypeScript (Character, Vampire)
-- [x] Données JSON des personnages
-- [x] Animation étoiles (Canvas)
-- [x] Page Home
-- [ ] Page liste des personnages
-- [ ] Page détail d'un personnage
-- [ ] Barre de recherche / filtres
-- [ ] Déploiement sur Vercel + Render
+- [x] Interfaces TypeScript (Character, Vampire, Tome, Arc, Lieu, Musique)
+- [x] Données des personnages, tomes, arcs, lieux et musiques
+- [x] Animation étoiles (Canvas), sur toute la hauteur du site
+- [x] Page Home (hero, personnages phares, spotlight tomes interactif)
+- [x] Page liste des personnages + recherche/filtres
+- [x] Page détail d'un personnage
+- [x] Page Tomes (regroupés par arc, modal de résumé)
+- [x] Page Chronologie
+- [x] Page Lieux + fiche détail
+- [x] Page Musiques (lecteur YouTube intégré)
+- [x] Animations (scroll reveal, tilt 3D, transitions de page)
+- [ ] Déploiement
 
 ---
 
@@ -72,40 +83,52 @@ Ouvrir [http://localhost:5173](http://localhost:5173) dans le navigateur.
 
 **alnrfLO** — [GitHub](https://github.com/alnrfLO)
 
+## 📁 Structure
+
 ```
 wiki Yofukashi no Uta
 ├─ eslint.config.js
 ├─ index.html
-├─ package-lock.json
 ├─ package.json
 ├─ public
 │  ├─ favicon.svg
-│  └─ icons.svg
+│  ├─ icons.svg
+│  └─ images
+│     ├─ characters/   (portraits des personnages)
+│     └─ tomes/        (couvertures des 20 tomes)
 ├─ README.md
 ├─ src
-│  ├─ App.css
 │  ├─ App.tsx
-│  ├─ components
-│  │  ├─ CharacterCard.tsx
-│  │  ├─ Navbar.css
-│  │  ├─ Navbar.tsx
-│  │  └─ StarBackground.tsx
-│  ├─ data
-│  │  ├─ characters.ts
-│  │  └─ tomes.ts
 │  ├─ index.css
 │  ├─ main.tsx
+│  ├─ components
+│  │  ├─ CharacterCard.tsx
+│  │  ├─ Icons.tsx
+│  │  ├─ Modal.tsx
+│  │  ├─ Navbar.tsx
+│  │  ├─ Reveal.tsx
+│  │  └─ StarBackground.tsx
+│  ├─ data
+│  │  ├─ arcs.ts
+│  │  ├─ characters.ts
+│  │  ├─ lieux.ts
+│  │  ├─ musiques.ts
+│  │  └─ tomes.ts
+│  ├─ hooks
+│  │  └─ useTilt.ts
 │  ├─ pages
 │  │  ├─ CharacterDetail.tsx
-│  │  ├─ Characters.css
 │  │  ├─ Characters.tsx
-│  │  ├─ Home.css
-│  │  └─ Home.tsx
+│  │  ├─ Chronologie.tsx
+│  │  ├─ Home.tsx
+│  │  ├─ LieuDetail.tsx
+│  │  ├─ Lieux.tsx
+│  │  ├─ Musiques.tsx
+│  │  └─ Tomes.tsx
 │  └─ types
 │     └─ index.ts
 ├─ tsconfig.app.json
 ├─ tsconfig.json
 ├─ tsconfig.node.json
 └─ vite.config.ts
-
 ```
