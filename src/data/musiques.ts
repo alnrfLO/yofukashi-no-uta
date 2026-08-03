@@ -1,0 +1,46 @@
+import type { Musique } from '../types/index'
+
+export const musiques: Musique[] = [
+    {
+        id: 'daten',
+        titre: 'Daten',
+        type: 'Opening',
+        saison: 'Saison 1',
+        interprete: 'Creepy Nuts',
+        episodes: 'Épisodes 1 à 13',
+        signification: '« Daten » (堕天) signifie « ange déchu »',
+        description: "Générique d'ouverture de la première saison de l'anime, interprété par le duo hip-hop Creepy Nuts (R-Shitei au chant/texte, DJ Matsunaga aux platines).",
+        youtubeId: 'HRL5Cp_mPeo',
+    },
+    {
+        id: 'yofukashi-no-uta-ed',
+        titre: 'Yofukashi no Uta',
+        type: 'Ending',
+        saison: 'Saison 1',
+        interprete: 'Creepy Nuts',
+        episodes: 'Épisodes 1 à 13',
+        signification: 'Reprend le titre original de l\'œuvre, « la chanson de ceux qui veillent tard »',
+        description: "Générique de fin de la première saison, également interprété par Creepy Nuts, qui reprend le titre japonais de la série elle-même.",
+    },
+    {
+        id: 'mirage',
+        titre: 'Mirage',
+        type: 'Opening',
+        saison: 'Saison 2',
+        interprete: 'Creepy Nuts',
+        episodes: 'Épisodes 1 à 12',
+        description: "Générique d'ouverture de la deuxième saison (été 2025), à nouveau confié à Creepy Nuts, qui signe ainsi les quatre génériques de la série.",
+        youtubeId: 'ce6yxES9oLA',
+    },
+    {
+        id: 'nemure',
+        titre: 'Nemure',
+        type: 'Ending',
+        saison: 'Saison 2',
+        interprete: 'Creepy Nuts',
+        episodes: 'Épisodes 1 à 12',
+        signification: '« Nemure » (眠れ) signifie « dors »',
+        description: "Générique de fin de la deuxième saison, qui clôt la série de collaborations entre l'anime et Creepy Nuts.",
+        youtubeId: 'riG7nwIgzmo',
+    },
+]

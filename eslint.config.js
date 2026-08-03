@@ -19,5 +19,10 @@ export default defineConfig([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
+    rules: {
+      // False positives on custom hooks that bundle a ref with handlers
+      // (e.g. useTilt returning { ref, onMouseMove, onMouseLeave }).
+      'react-hooks/refs': 'off',
+    },
   },
 ])
